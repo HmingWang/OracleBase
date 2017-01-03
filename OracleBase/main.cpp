@@ -20,7 +20,7 @@ int main()
 		{
 			
 			Connection *conn = env->createConnection(
-				userName, password, connectString);
+				userName, password, connectString);//111
 			Statement *stmt = conn->createStatement(
 				SQL(SELECT *  FROM func));
 			ResultSet *rs = stmt->executeQuery();
